@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Motor()
+comment1.params=speed
+comment1.target=void\ turnLeft(int)
+comment2.params=speed
+comment2.target=void\ turnRight(int)
+comment3.params=
+comment3.target=void\ stop()
+numComments=4
