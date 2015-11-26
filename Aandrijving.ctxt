@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Aandrijving()
+comment1.params=speed
+comment1.target=void\ forward(int)
+comment2.params=
+comment2.target=void\ stop()
+comment3.params=degrees
+comment3.target=void\ turnDegree(int)
+comment4.params=speed
+comment4.target=void\ acceleration(int)
+numComments=5
