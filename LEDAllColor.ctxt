@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=redPin\ greenPin\ bluePin
+comment0.target=LEDAllColor(int,\ int,\ int)
+comment1.params=
+comment1.target=void\ update()
+comment1.text=\r\n\ If\ led\ is\ turned\ on\ this\ will\ update\ the\ color\ and\ shift\ the\ hue\ up\ by\ 0.01f\r\n
+comment2.params=
+comment2.target=void\ turnOn()
+comment2.text=\r\n\ Starts\ the\ color\ shifting\r\n
+comment3.params=hue
+comment3.target=void\ updateColor(float)
+comment3.text=\r\n\ Parameter\:\ hue,\ hue\ element\ of\ hsb\ color\ to\ update\ color\r\n\ This\ function\ will\ update\ the\ color\ of\ the\ led\ with\ the\ given\ hue\ parameter\r\n
+comment4.params=
+comment4.target=void\ turnOff()
+comment4.text=\r\n\ Stops\ the\ color\ shifting\ and\ turns\ off\ the\ led\r\n
+numComments=5
