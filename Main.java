@@ -2,8 +2,8 @@ import TI.*;
 
 public class Main
 {
-    private static Servo servoLinks = new Servo(15);
-    private static Servo servoRechts = new Servo(14);
+    //private Servo servoLinks = new Servo(15);
+    //private Servo servoRechts = new Servo(14);
     //private int totaal;
     public Main()
     {
@@ -13,12 +13,11 @@ public class Main
     public static void main(String[] args)
     {
         Aandrijving aandrijving = new Aandrijving();
-
+        Infrared infrared = new Infrared();
         while(true)
         {
-            //aandrijving.forward(200);
             //aandrijving.acceleration(0);
-            //servoLinks.update(1700);
+            //aandrijving.decceleration(200);
             int pulseLen = BoeBot.pulseIn(15,false,6000);
             int totaal = 0;
             if(pulseLen < 2000)
@@ -29,29 +28,54 @@ public class Main
                     {
                         totaal += Math.pow(2,i);
                     }
-                    
+
                 }
                 System.out.println(totaal);
             }
-            switch(totaal)
+            switch(infrared.getTotaal())
             {
                 case 0:
+                aandrijving.turnDegree(-45);
+                break;
+
+                case 1:
+                aandrijving.forward(200);
+                break;
+
+                case 2:
+                aandrijving.turnDegree(45);
+                break;
+
+                case 3:
+                aandrijving.turnDegree(-90);
+                break;
+
+                case 4:
                 aandrijving.stop();
                 break;
-                
-                case 4:
-                int i = 0;
-                aandrijving.acceleration(i);
-                i += 10;
+
+                case 5:
+                aandrijving.turnDegree(90);
+                break;
+
+                case 6:
+                aandrijving.turnDegree(45);
+                break;
+
+                case 7:
+                aandrijving.backwards(200);
+                break;
+
+                case 8:
+                aandrijving.turnDegree(-45);
                 break;
 
                 default:
                 aandrijving.forward(100);
                 break;
-                
+
             }
             BoeBot.wait(1);
         }
-
     }
 }
