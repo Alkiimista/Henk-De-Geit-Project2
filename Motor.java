@@ -11,7 +11,7 @@ public class Motor
     
     }
     
-    public void turnLeft(int speed)
+     public void turnLeft(int speed)
     {
         servoLeftMotor.update(1500 + speed);
         BoeBot.wait(1);
