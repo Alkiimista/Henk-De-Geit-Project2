@@ -3,7 +3,8 @@ import TI.*;
 public abstract class LED
 {
     protected PWM red, green, blue;
-    
+    //Hoi
+	
     /*
      * Corresponding pins need to be given as parameter, first red, than green and finaly blue
      */
