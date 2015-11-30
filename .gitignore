@@ -19,6 +19,7 @@ $RECYCLE.BIN/
 
 # Ignored Files
 /package.bluej
+*.ctxt
 
 # =========================
 # Operating System Files
