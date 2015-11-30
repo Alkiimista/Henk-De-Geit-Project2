@@ -1,4 +1,12 @@
 #BlueJ class context
-comment0.params=
-comment0.target=LEDFade()
-numComments=1
+comment0.params=redPin\ greenPin\ bluePin
+comment0.target=LEDFade(int,\ int,\ int)
+comment1.params=
+comment1.target=void\ update()
+comment2.params=
+comment2.target=void\ turnOn()
+comment3.params=
+comment3.target=void\ turnOff()
+comment4.params=
+comment4.target=void\ updateColor()
+numComments=5

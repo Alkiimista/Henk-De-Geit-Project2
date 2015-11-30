@@ -17,6 +17,9 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Ignored Files
+package.bluej
+*.ctxt
 # =========================
 # Operating System Files
 # =========================
